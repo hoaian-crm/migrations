@@ -31,7 +31,6 @@ import { ChangeCustomerInTableSalesToCustomerId1701958187381 } from "./170195818
 import { AddRolePermission1701964114313 } from "./1701964114313-AddRolePermission";
 
 config();
-
 export default new DataSource({
   type: "postgres",
   host: process.env.PG_HOST,
