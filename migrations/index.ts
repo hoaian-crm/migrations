@@ -27,6 +27,7 @@ import { CreateStoragePermission1701317000000 } from "./1701317000000-CreateStor
 import { ProductsTable1701177454295 } from "./ProductsTable1701177454295";
 import { AddEnableForPluginApi1701245604826 } from "./AddEnableForPluginApi1701245604826";
 import { AddPrimaryKeyAlias1701917192548 } from "./1701917192548-add-primary-key-alias";
+import { ChangeCustomerInTableSalesToCustomerId1701958187381 } from "./1701958187381-change-customer-in-table-sales-to-customer-id";
 
 config();
 
@@ -66,5 +67,6 @@ export default new DataSource({
     UpdatePrimaryKey1701789793124, //25
     UpdateAmountCustomerProductTimestart1701787728932, //26
     AddPrimaryKeyAlias1701917192548,
+    ChangeCustomerInTableSalesToCustomerId1701958187381,
   ],
 });
