@@ -1,5 +1,6 @@
 import { config } from "dotenv";
 import { DataSource } from "typeorm";
+import { TestMigration1701922351369 } from "./1701922351369-test_migration";
 
 config();
 
@@ -11,5 +12,5 @@ export default new DataSource({
   database: process.env.PG_DATABASE,
   port: +process.env.PG_PORT,
   entities: [],
-  migrations: [],
+  migrations: [TestMigration1701922351369],
 });
