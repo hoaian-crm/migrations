@@ -26,6 +26,7 @@ import { AddMailPermission1701509428731 } from "./1701509428731-AddMailPermissio
 import { CreateStoragePermission1701317000000 } from "./1701317000000-CreateStoragePermission";
 import { ProductsTable1701177454295 } from "./ProductsTable1701177454295";
 import { AddEnableForPluginApi1701245604826 } from "./AddEnableForPluginApi1701245604826";
+import { AddPrimaryKeyAlias1701917192548 } from "./1701917192548-add-primary-key-alias";
 
 config();
 
@@ -64,5 +65,6 @@ export default new DataSource({
     DeleteTableProduct1701710170910, //24
     UpdatePrimaryKey1701789793124, //25
     UpdateAmountCustomerProductTimestart1701787728932, //26
+    AddPrimaryKeyAlias1701917192548,
   ],
 });

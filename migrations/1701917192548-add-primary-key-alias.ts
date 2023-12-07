@@ -9,7 +9,7 @@ export class AddPrimaryKeyAlias1701917192548 implements MigrationInterface {
 
   public async down(queryRunner: QueryRunner): Promise<void> {
     await queryRunner.query(`
-      alter table products drop constraint products_pkey cascade;
+          alter table products drop constraint products_pkey cascade;
     `);
   }
 }
