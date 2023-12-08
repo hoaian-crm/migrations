@@ -8,7 +8,6 @@ export class ChangeProductToProductidInTableProduct1702017076034
       alter table sales rename column product to product_id;
   `);
   }
-
   public async down(queryRunner: QueryRunner): Promise<void> {
     await queryRunner.query(`
       alter table sales rename column product_id to product;
