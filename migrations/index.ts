@@ -29,6 +29,7 @@ import { UpdatePrimaryKey1701789793124 } from "./1701789793124-update-primary-ke
 import { AddPrimaryKeyAlias1701917192548 } from "./1701917192548-add-primary-key-alias";
 import { ChangeCustomerInTableSalesToCustomerId1701958187381 } from "./1701958187381-change-customer-in-table-sales-to-customer-id";
 import { AddRolePermission1701964114313 } from "./1701964114313-AddRolePermission";
+import { ChangeProductToProductidInTableProduct1702017076034 } from "./1702017076034-change-product-to-productid-in-table-product";
 
 config();
 export default new DataSource({
@@ -69,5 +70,6 @@ export default new DataSource({
     AddPrimaryKeyAlias1701917192548,
     ChangeCustomerInTableSalesToCustomerId1701958187381,
     AddRolePermission1701964114313,
+    ChangeProductToProductidInTableProduct1702017076034,
   ],
 });
