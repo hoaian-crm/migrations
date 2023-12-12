@@ -30,6 +30,9 @@ import { AddPrimaryKeyAlias1701917192548 } from "./1701917192548-add-primary-key
 import { ChangeCustomerInTableSalesToCustomerId1701958187381 } from "./1701958187381-change-customer-in-table-sales-to-customer-id";
 import { AddRolePermission1701964114313 } from "./1701964114313-AddRolePermission";
 import { ChangeProductInTableSales1702022550577 } from "./1702022550577-change-product-in-table-sales";
+import { CreateAddressTable1702369163303 } from "./1702366042224-CreateAddressTable";
+import { ChangeColumnAddress1702369471207 } from "./1702369471207-ChangeColumnAddress";
+import { CustomerSeed1702366042225 } from "./1702369471207-CustomerSeed";
 
 config();
 export default new DataSource({
@@ -71,5 +74,8 @@ export default new DataSource({
     ChangeCustomerInTableSalesToCustomerId1701958187381,
     AddRolePermission1701964114313,
     ChangeProductInTableSales1702022550577,
+    CreateAddressTable1702369163303,
+    ChangeColumnAddress1702369471207,
+    CustomerSeed1702366042225
   ],
 });
