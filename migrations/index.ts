@@ -1,5 +1,9 @@
 import { config } from "dotenv";
 import { DataSource } from "typeorm";
+import { CreateTablePermission1602726437787 } from "./1602726437787-CreateTablePermission";
+import { CreateTableRole1602727121977 } from "./1602726440867-CreateTableRole";
+import { CreateTableRolePermissions1602727121977 } from "./1602727121977-CreateTableRolePermissions";
+import { CreateTableUser1603726410372 } from "./1603726410372-CreateTableUser";
 import { CreatePluginTable1700473822354 } from "./1700473822354-CreatePluginTable";
 import { AddColumnConfigToPlugin1700531709988 } from "./1700531709988-AddColumnConfigToPlugin";
 import { AddTablePluginPermission1700535138704 } from "./1700535138704-AddTablePluginPermission";
@@ -25,16 +29,11 @@ import { AddColumnImageToTemplate1701594237013 } from "./1701594237013-AddColumn
 import { AddColumnDescriptionToTemplate1701598238584 } from "./1701598238584-AddColumnDescriptionToTemplate";
 import { DeleteTableProduct1701710170910 } from "./1701710170910-delete-table-product";
 import { UpdateAmountCustomerProductTimestart1701787728932 } from "./1701787728932-update-amount-customer-product-timestart";
-import { UpdatePrimaryKey1701789793124 } from "./1701789793124-update-primary-key";
 import { AddPrimaryKeyAlias1701917192548 } from "./1701917192548-add-primary-key-alias";
-import { ChangeCustomerInTableSalesToCustomerId1701958187381 } from "./1701958187381-change-customer-in-table-sales-to-customer-id";
 import { AddRolePermission1701964114313 } from "./1701964114313-AddRolePermission";
 import { ChangeProductInTableSales1702022550577 } from "./1702022550577-change-product-in-table-sales";
 import { DeleteUniqueContraintRole1702099058668 } from "./1702099058668-DeleteUniqueContraintRole";
-import { CreateAddressTable1702369163303 } from "./1702366042224-CreateAddressTable";
-import { ChangeColumnAddress1702369471207 } from "./1702369471207-ChangeColumnAddress";
-import { CustomerSeed1702366042225 } from "./1702369471207-CustomerSeed";
-import { SaleSeed1702372960793 } from "./1702372960793-SaleSeed";
+import { CreateSalePermission1702564771682 } from "./1702564771682-CreateSalePermission";
 
 config();
 export default new DataSource({
@@ -46,6 +45,10 @@ export default new DataSource({
   port: +process.env.PG_PORT,
   entities: [],
   migrations: [
+    CreateTablePermission1602726437787,
+    CreateTableRole1602727121977,
+    CreateTableRolePermissions1602727121977,
+    CreateTableUser1603726410372,
     CreatePluginTable1700473822354, //1
     AddColumnConfigToPlugin1700531709988, //2
     AddTablePluginPermission1700535138704, //3
@@ -70,16 +73,13 @@ export default new DataSource({
     AddColumnImageToTemplate1701594237013, //22
     AddColumnDescriptionToTemplate1701598238584, //23
     DeleteTableProduct1701710170910, //24
-    UpdatePrimaryKey1701789793124, //25
     UpdateAmountCustomerProductTimestart1701787728932, //26
     AddPrimaryKeyAlias1701917192548,
-    ChangeCustomerInTableSalesToCustomerId1701958187381,
     AddRolePermission1701964114313,
     ChangeProductInTableSales1702022550577,
-    CreateAddressTable1702369163303,
-    ChangeColumnAddress1702369471207,
-    CustomerSeed1702366042225,
+    // CreateAddressTable1702369163303,
+    // ChangeColumnAddress1702369471207,
     DeleteUniqueContraintRole1702099058668,
-    SaleSeed1702372960793
+    CreateSalePermission1702564771682,
   ],
 });

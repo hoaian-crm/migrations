@@ -1,4 +1,4 @@
-import { MigrationInterface, QueryRunner } from 'typeorm';
+import { MigrationInterface, QueryRunner } from "typeorm";
 
 export class DeleteTableProduct1701710170910 implements MigrationInterface {
   public async up(queryRunner: QueryRunner): Promise<void> {
@@ -16,10 +16,6 @@ export class DeleteTableProduct1701710170910 implements MigrationInterface {
           "updatedAt" timestamp default NOW(),
           primary key (id)
     );
-
-    CREATE UNIQUE INDEX enable_alias_unique_idx 
-    ON products (alias) 
-    WHERE disable = false;
         `);
   }
 

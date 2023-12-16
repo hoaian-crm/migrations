@@ -15,7 +15,8 @@ export class Customer1701267400879 implements MigrationInterface {
             "createdAt" timestamp not null default NOW(),
             "updatedAt" timestamp not null default NOW(),
             unique(email),
-            unique(identify)
+            unique(identify),
+            primary key(id)
         )
     `);
   }
