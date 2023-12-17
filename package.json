@@ -6,7 +6,8 @@
   "scripts": {
     "migration:up": "typeorm-ts-node-commonjs migration:run -d migrations/index.ts ",
     "migration:down": "typeorm-ts-node-commonjs migration:revert -d migrations/index.ts ",
-    "migration:create": "typeorm migration:create"
+    "migration:create": "typeorm migration:create",
+    "seeder:up": "typeorm-ts-node-commonjs migration:run -d seeder/index.ts"
   },
   "keywords": [],
   "author": "",

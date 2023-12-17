@@ -34,6 +34,7 @@ import { AddRolePermission1701964114313 } from "./1701964114313-AddRolePermissio
 import { ChangeProductInTableSales1702022550577 } from "./1702022550577-change-product-in-table-sales";
 import { DeleteUniqueContraintRole1702099058668 } from "./1702099058668-DeleteUniqueContraintRole";
 import { CreateSalePermission1702564771682 } from "./1702564771682-CreateSalePermission";
+import { AddAddressCutomer1702814301219 } from "./1702814301219-AddAddressCutomer";
 
 config();
 export default new DataSource({
@@ -81,5 +82,6 @@ export default new DataSource({
     // ChangeColumnAddress1702369471207,
     DeleteUniqueContraintRole1702099058668,
     CreateSalePermission1702564771682,
+    AddAddressCutomer1702814301219
   ],
 });
