@@ -1,0 +1,8 @@
+version: "3.7"
+
+services:
+  migration:
+    container_name: migration_seeder
+    build: .
+    env_file:
+      - .env
