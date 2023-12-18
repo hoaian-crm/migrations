@@ -1,8 +1,8 @@
 FROM node:18
 
-WORKDIR /migration
+WORKDIR /usr/script
 
-COPY ./package*.json .
+COPY ./package.json ./yarn.lock ./
 
 RUN yarn
 
