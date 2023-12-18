@@ -8,4 +8,6 @@ RUN yarn
 
 COPY . .
 
-CMD [ "yarn", 'seeder:up' ]
+RUN chmod +x ./run.sh
+
+ENTRYPOINT ["./run.sh"]
