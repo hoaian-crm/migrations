@@ -12,7 +12,7 @@ export class CustomerSeed1702366042225 implements MigrationInterface {
             locale: [vi, en]
         })
 
-        for (let i = 0; i <= 10000; i++){
+        for (let i = 0; i <= 10; i++){
             try {
             await queryRunner.query(`
                 insert into customers
