@@ -37,6 +37,7 @@ import { CreateSalePermission1702564771682 } from "./1702564771682-CreateSalePer
 import { AddAddressCutomer1702814301219 } from "./1702814301219-AddAddressCutomer";
 import { DeleteUniqueContraintPermission1702890446340 } from "./1702870446340-DeleteUniqueContraintPermission";
 import { CreatePermissions1702889338854 } from "./1702889338854-CreatePermissions";
+import { UpdateFieldDisableForProducts1703082278279 } from "./1703082278279-update-field-disable-for-products";
 
 config();
 export default new DataSource({
@@ -87,5 +88,6 @@ export default new DataSource({
     AddAddressCutomer1702814301219,
     DeleteUniqueContraintPermission1702890446340,
     CreatePermissions1702889338854,
+    UpdateFieldDisableForProducts1703082278279,
   ],
 });
