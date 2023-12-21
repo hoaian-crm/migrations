@@ -1,5 +1,6 @@
 import { config } from "dotenv";
 import { DataSource } from "typeorm";
+import { CreateRootSchema1503041016217 } from "./1503041016217-CreateRootSchema";
 import { CreateTablePermission1602726437787 } from "./1602726437787-CreateTablePermission";
 import { CreateTableRole1602727121977 } from "./1602726440867-CreateTableRole";
 import { CreateTableRolePermissions1602727121977 } from "./1602727121977-CreateTableRolePermissions";
@@ -37,6 +38,7 @@ import { CreateSalePermission1702564771682 } from "./1702564771682-CreateSalePer
 import { AddAddressCutomer1702814301219 } from "./1702814301219-AddAddressCutomer";
 import { DeleteUniqueContraintPermission1702890446340 } from "./1702870446340-DeleteUniqueContraintPermission";
 import { CreatePermissions1702889338854 } from "./1702889338854-CreatePermissions";
+import { CreateTableAccount1703040790880 } from "./1703040790880-CreateTableAccount";
 import { UpdateFieldDisableForProducts1703082278279 } from "./1703082278279-update-field-disable-for-products";
 
 config();
@@ -49,6 +51,7 @@ export default new DataSource({
   port: +process.env.PG_PORT,
   entities: [],
   migrations: [
+    CreateRootSchema1503041016217,
     CreateTablePermission1602726437787,
     CreateTableRole1602727121977,
     CreateTableRolePermissions1602727121977,
@@ -88,6 +91,7 @@ export default new DataSource({
     AddAddressCutomer1702814301219,
     DeleteUniqueContraintPermission1702890446340,
     CreatePermissions1702889338854,
+    CreateTableAccount1703040790880,
     UpdateFieldDisableForProducts1703082278279,
   ],
 });
