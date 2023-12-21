@@ -48,6 +48,7 @@ export default new DataSource({
   username: process.env.PG_USER,
   password: process.env.PG_PASSWORD,
   database: process.env.PG_DATABASE,
+  schema: process.env.PG_SCHEMA,
   port: +process.env.PG_PORT,
   entities: [],
   migrations: [
