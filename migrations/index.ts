@@ -1,5 +1,6 @@
 import { config } from "dotenv";
 import { DataSource } from "typeorm";
+import { SetCurrentSchema1503041016216 } from "./1503041016216-SetCurrentSchema";
 import { CreateRootSchema1503041016217 } from "./1503041016217-CreateRootSchema";
 import { CreateTablePermission1602726437787 } from "./1602726437787-CreateTablePermission";
 import { CreateTableRole1602727121977 } from "./1602726440867-CreateTableRole";
@@ -52,6 +53,7 @@ export default new DataSource({
   port: +process.env.PG_PORT,
   entities: [],
   migrations: [
+    SetCurrentSchema1503041016216,
     CreateRootSchema1503041016217,
     CreateTablePermission1602726437787,
     CreateTableRole1602727121977,
