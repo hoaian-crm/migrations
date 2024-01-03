@@ -43,6 +43,7 @@ import { CreateTableAccount1703040790880 } from "./1703040790880-CreateTableAcco
 import { UpdateFieldDisableForProducts1703082278279 } from "./1703082278279-update-field-disable-for-products";
 import { CreateTableAddresses1704176879565 } from "./1704176879565-CreateTableAddresses";
 import { UpdateAddressRelationCustomer1704177458199 } from "./1704177458199-UpdateAddressRelationCustomer";
+import { CreateDobAndExtensionCustomer1704293914488 } from "./1704293914488-CreateDobAndExtensionCustomer";
 
 config();
 export default new DataSource({
@@ -99,6 +100,7 @@ export default new DataSource({
     CreateTableAccount1703040790880,
     UpdateFieldDisableForProducts1703082278279,
     CreateTableAddresses1704176879565,
-    UpdateAddressRelationCustomer1704177458199
+    UpdateAddressRelationCustomer1704177458199,
+    CreateDobAndExtensionCustomer1704293914488
   ],
 });

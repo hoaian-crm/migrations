@@ -6,10 +6,10 @@ export class SaleSeed1702372960793 implements MigrationInterface {
     const customerIds = (
       await queryRunner.query("select id from customers")
     ).map((c) => c.id);
-    const productIds = (await queryRunner.query("select id from products")).map(
+    const productIds = (await queryRunner.query("select id from products limit 100")).map(
       (p) => p.id
     );
-    for (let i = 0; i <= 1000; i++) {
+    for (let i = 0; i <= 100000; i++) {
         const date = faker.date.between({
             from: "2023-01-01T00:00:00.000Z",
             to: "2024-01-01T00:00:00.000Z",
