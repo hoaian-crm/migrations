@@ -107,6 +107,6 @@ export default new DataSource({
     UpdateAddressRelationCustomer1704177458199,
     CreateDobAndExtensionCustomer1704293914488,
     AddSoftDeleteCustomers1704302897117,
-    // UpdatePrimaryKeyForResourceTags1704306039139,
+    UpdatePrimaryKeyForResourceTags1704306039139,
   ],
 });

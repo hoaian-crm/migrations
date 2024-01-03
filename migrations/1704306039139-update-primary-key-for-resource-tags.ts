@@ -6,7 +6,7 @@ export class UpdatePrimaryKeyForResourceTags1704306039139
   public async up(queryRunner: QueryRunner): Promise<void> {
     return await queryRunner.query(`
         ALTER TABLE resource_tags
-        ADD CONSTRAINT resource_tag_key PRIMARY KEY (key, value, resource, resource_id)
+        ADD CONSTRAINT resource_tag_key unique (key, value, resource, resource_id)
     `);
   }
 
