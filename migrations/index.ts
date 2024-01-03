@@ -44,6 +44,7 @@ import { UpdateFieldDisableForProducts1703082278279 } from "./1703082278279-upda
 import { CreateTableAddresses1704176879565 } from "./1704176879565-CreateTableAddresses";
 import { UpdateAddressRelationCustomer1704177458199 } from "./1704177458199-UpdateAddressRelationCustomer";
 import { CreateDobAndExtensionCustomer1704293914488 } from "./1704293914488-CreateDobAndExtensionCustomer";
+import { AddSoftDeleteCustomers1704302897117 } from "./1704302897117-AddSoftDeleteCustomers";
 
 config();
 export default new DataSource({
@@ -101,6 +102,7 @@ export default new DataSource({
     UpdateFieldDisableForProducts1703082278279,
     CreateTableAddresses1704176879565,
     UpdateAddressRelationCustomer1704177458199,
-    CreateDobAndExtensionCustomer1704293914488
+    CreateDobAndExtensionCustomer1704293914488,
+    AddSoftDeleteCustomers1704302897117
   ],
 });
