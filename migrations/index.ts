@@ -41,6 +41,7 @@ import { DeleteUniqueContraintPermission1702890446340 } from "./1702870446340-De
 import { CreatePermissions1702889338854 } from "./1702889338854-CreatePermissions";
 import { CreateTableAccount1703040790880 } from "./1703040790880-CreateTableAccount";
 import { UpdateFieldDisableForProducts1703082278279 } from "./1703082278279-update-field-disable-for-products";
+import { CreateResouceTag1704041044448 } from "./1704041044448-create-resouce-tag";
 
 config();
 export default new DataSource({
@@ -96,5 +97,6 @@ export default new DataSource({
     CreatePermissions1702889338854,
     CreateTableAccount1703040790880,
     UpdateFieldDisableForProducts1703082278279,
+    CreateResouceTag1704041044448,
   ],
 });
