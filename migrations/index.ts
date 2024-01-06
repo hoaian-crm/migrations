@@ -47,6 +47,9 @@ import { UpdateAddressRelationCustomer1704177458199 } from "./1704177458199-Upda
 import { CreateDobAndExtensionCustomer1704293914488 } from "./1704293914488-CreateDobAndExtensionCustomer";
 import { AddSoftDeleteCustomers1704302897117 } from "./1704302897117-AddSoftDeleteCustomers";
 import { UpdatePrimaryKeyForResourceTags1704306039139 } from "./1704306039139-update-primary-key-for-resource-tags";
+import { ReplaceTagTable1704519779488 } from "./1704519779488-ReplaceTagTable";
+import { CreateMockTag1704520140250 } from "./1704520140250-CreateMockTag";
+import { CreateRefTagResourceTag1704521286446 } from "./1704521286446-CreateRefTagResourceTag";
 
 config();
 export default new DataSource({
@@ -108,5 +111,8 @@ export default new DataSource({
     CreateDobAndExtensionCustomer1704293914488,
     AddSoftDeleteCustomers1704302897117,
     UpdatePrimaryKeyForResourceTags1704306039139,
+    ReplaceTagTable1704519779488,
+    CreateMockTag1704520140250,
+    CreateRefTagResourceTag1704521286446
   ],
 });
