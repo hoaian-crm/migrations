@@ -50,6 +50,7 @@ import { UpdatePrimaryKeyForResourceTags1704306039139 } from "./1704306039139-up
 import { ReplaceTagTable1704519779488 } from "./1704519779488-ReplaceTagTable";
 import { CreateMockTag1704520140250 } from "./1704520140250-CreateMockTag";
 import { CreateRefTagResourceTag1704521286446 } from "./1704521286446-CreateRefTagResourceTag";
+import { AddAvatarToCustomer1704440676348 } from "./1704440676348-AddAvatarToCustomer";
 
 config();
 export default new DataSource({
@@ -113,6 +114,7 @@ export default new DataSource({
     UpdatePrimaryKeyForResourceTags1704306039139,
     ReplaceTagTable1704519779488,
     CreateMockTag1704520140250,
-    CreateRefTagResourceTag1704521286446
+    CreateRefTagResourceTag1704521286446,
+    AddAvatarToCustomer1704440676348
   ],
 });
