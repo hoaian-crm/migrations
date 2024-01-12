@@ -51,6 +51,7 @@ import { ReplaceTagTable1704519779488 } from "./1704519779488-ReplaceTagTable";
 import { CreateMockTag1704520140250 } from "./1704520140250-CreateMockTag";
 import { CreateRefTagResourceTag1704521286446 } from "./1704521286446-CreateRefTagResourceTag";
 import { AddAvatarToCustomer1704440676348 } from "./1704440676348-AddAvatarToCustomer";
+import { UpdateTableProduct1705029906969 } from "./1705029906969-UpdateTableProduct";
 
 config();
 export default new DataSource({
@@ -115,6 +116,7 @@ export default new DataSource({
     ReplaceTagTable1704519779488,
     CreateMockTag1704520140250,
     CreateRefTagResourceTag1704521286446,
-    AddAvatarToCustomer1704440676348
+    AddAvatarToCustomer1704440676348,
+    UpdateTableProduct1705029906969,
   ],
 });
