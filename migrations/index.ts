@@ -52,6 +52,7 @@ import { CreateMockTag1704520140250 } from "./1704520140250-CreateMockTag";
 import { CreateRefTagResourceTag1704521286446 } from "./1704521286446-CreateRefTagResourceTag";
 import { AddAvatarToCustomer1704440676348 } from "./1704440676348-AddAvatarToCustomer";
 import { UpdateTableProduct1705029906969 } from "./1705029906969-UpdateTableProduct";
+import { DropColumnAlias1705329188930 } from "./1705329188930-DropColumnAlias";
 
 config();
 export default new DataSource({
@@ -98,8 +99,6 @@ export default new DataSource({
     AddPrimaryKeyAlias1701917192548,
     AddRolePermission1701964114313,
     ChangeProductInTableSales1702022550577,
-    // CreateAddressTable1702369163303,
-    // ChangeColumnAddress1702369471207,
     DeleteUniqueContraintRole1702099058668,
     CreateSalePermission1702564771682,
     AddAddressCutomer1702814301219,
@@ -118,5 +117,6 @@ export default new DataSource({
     CreateRefTagResourceTag1704521286446,
     AddAvatarToCustomer1704440676348,
     UpdateTableProduct1705029906969,
+    DropColumnAlias1705329188930
   ],
 });
