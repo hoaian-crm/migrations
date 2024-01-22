@@ -53,6 +53,7 @@ import { CreateRefTagResourceTag1704521286446 } from "./1704521286446-CreateRefT
 import { AddAvatarToCustomer1704440676348 } from "./1704440676348-AddAvatarToCustomer";
 import { UpdateTableProduct1705029906969 } from "./1705029906969-UpdateTableProduct";
 import { DropColumnAlias1705329188930 } from "./1705329188930-DropColumnAlias";
+import { SaleModule1705894470932 } from "./1705894470932-SaleModule";
 
 config();
 export default new DataSource({
@@ -117,6 +118,7 @@ export default new DataSource({
     CreateRefTagResourceTag1704521286446,
     AddAvatarToCustomer1704440676348,
     UpdateTableProduct1705029906969,
-    DropColumnAlias1705329188930
+    DropColumnAlias1705329188930,
+    SaleModule1705894470932
   ],
 });
